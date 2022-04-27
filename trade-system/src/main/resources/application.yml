@@ -1,0 +1,16 @@
+integration:
+  stock-exchange:
+    server-uri: http://localhost:1234
+    rest:
+      create-user: /user
+      get-stock: /stock/{id}
+      purchase-stock: /stock/{id}/purchase
+      sell-stock: /stock/{id}/sell
+
+server:
+  port: 1235
+
+spring:
+  data:
+    mongodb:
+      database: my_database
